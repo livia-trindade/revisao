@@ -1,0 +1,47 @@
+.box{
+    width: 1500px;
+    height: 600px;
+    display: grid;
+    grid-template-areas: "h h"
+                         "l lat"
+                         "f f";
+
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 800px 300px ;                     
+}
+
+.header{
+    background-color: red;
+    grid-area: h;
+}
+
+.l1{
+    display: flex;
+    background-color: yellow;
+    grid-area: l;
+}
+
+.lateral{
+    background-color: pink;
+    grid-area: lat;
+}
+
+.footer{
+    background-color: burlywood;
+    grid-area: f;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+}
+
+.c1, .c2, .c3{
+    background-color: rgb(30, 210, 198);
+    height: 33.33%;
+    width: 100%;
+}
+
+.c2{
+    background-color: chartreuse;
+}
